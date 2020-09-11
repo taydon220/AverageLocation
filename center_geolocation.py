@@ -1,16 +1,6 @@
 import math
 import webbrowser
-
-
-class Location:
-    def __init__(self, name, lat, lon, weight=None):
-        self.name = name
-        self.lat = lat
-        self.lon = lon
-        self.weight = weight
-        if weight is not None:
-            self.weightedlat = lat * weight
-            self.weightedlon = lon * weight
+from config import my_locations
 
 
 def find_center(locations):
@@ -73,8 +63,4 @@ def find_weighted_center(locations):
     return math.degrees(center_lat), math.degrees(center_lon)
 
 
-if __name__ == "__main__":
-    my_locations = []  # List of Location class objects.
-    weighted_center = find_weighted_center(my_locations)
-    print(f"The weighted center coordinates are: {weighted_center}")
-    webbrowser.open(f"https://www.google.com/maps/search/{weighted_center}")
+
