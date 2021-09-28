@@ -1,0 +1,2 @@
+# This script will find both the weighted and un-weighted geographical centers of the list of Locations in config.py.
+# After found, you will have the option to open a web browser with the points found on Google Maps.
