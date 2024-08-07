@@ -3,10 +3,10 @@ class Location:
         self.name = name  # String, name of city. Ex) Houston, TX
         self.lat = lat  # Float, decimal value latitude.
         self.lon = lon  # Float, decimal value longitude.
-        self.weight = weight  # Float, years spent in this location.
+        self.weight = weight  # Float
         self.coords = (lat, lon)
 
     def print_info(self):
         print(f"Name: {self.name}")
         print(f"Coordinates: {self.coords}")
-        print(f"Weight: {self.weight} year(s).\n")
+        print(f"Weight: {self.weight} unit(s).\n")
